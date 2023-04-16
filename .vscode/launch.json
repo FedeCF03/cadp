@@ -1,0 +1,25 @@
+{
+  "configurations": [
+      {
+          "type": "fpDebug",
+          "request": "launch",
+          "name": "App with parameters",
+          "program": "${workspaceFolder}/testparams",
+          "parameters": [
+              "First parameter",
+              "Second parameter"
+          ],
+          "workingdirectory": "/tmp",
+          "environment": [
+              {
+                  "name": "EnvironmentVariable1",
+                  "value": "Some value"
+              },
+              {
+                  "name": "EnvironmentVariable2",
+                  "value": "Another value"
+              }
+          ]
+      }
+  ]
+}
