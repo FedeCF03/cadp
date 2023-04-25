@@ -1,1 +1,1 @@
-[fecha.dia,fecha.mes,fecha.ano]
+suma/99

@@ -1,11 +1,12 @@
 
-Program ejem;
+Program ejer9;
 
-Var zona,cantsoja: integer;
+Var car : char;
+
+Var cumple : boolean;
 
 Begin
-  zona := 1;
-  cantsoja := (zona=1) Or (zona=2);
-
-  Write(cantsoja);
+  readln(car);
+  Readln(car);
+  WriteLn(car);
 End.
