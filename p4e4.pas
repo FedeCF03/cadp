@@ -38,7 +38,8 @@ Begin
             End
         End;
     End;
-  If (encontre=false) Then x := -1;
+
+  sdad  If (encontre=false) Then x := -1;
 
 End;
 
@@ -104,6 +105,9 @@ Var i,mayor,pmayor: integer;
 Begin
   mayor := 0;
 
+
+
+
 //aca capaz tenes que poner menos por si tiene de mayor vvalor -1 no se que preferiran los profes(preguintar si se da laocacion)}
   For i:=0 To 99 Do
 
@@ -124,6 +128,9 @@ Function elementoMin(arrai:vector): integer;
 Var i,menor,pmenor: integer;
 Begin
   menor := 0;
+
+
+
 
 
 
