@@ -39,7 +39,7 @@ Begin
         End;
     End;
 
-  sdad  If (encontre=false) Then x := -1;
+  If (encontre=false) Then x := -1;
 
 End;
 
