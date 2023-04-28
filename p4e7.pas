@@ -12,7 +12,7 @@ Begin
  numero := numero Div 10;
 
 End;
-Procedure oculorrencia(digito,numero:integer;Var a:numeros);
+Procedure ocurrencia(digito,numero:integer;Var a:numeros);
 Begin
  If Not(numero=0)Then
   a[digito] := a[digito]+1;
@@ -27,21 +27,21 @@ Begin
    a[i] := 0;
   End;
 End;
-Procedure degetomsleido(pito:numeros;Var concha,p :integer);
+Procedure digitomsleido(v:numeros;Var n,p :integer);
 
 Var i:integer;
 Begin
  For i:=0 To 9 Do
   Begin
-   If (pito[i]>concha)Then
+   If (v[i]>n)Then
     Begin
-     concha := pito[i];
+     N := v[i];
      p := i;
     End;
   End;
 End;
 
-Function degetosemocuremsa(a:numeros):integer;
+Function digitosemocuremsa(a:numeros):integer;
 
 Var i:integer;
 Begin
@@ -70,7 +70,7 @@ Begin
    While Not(numero=0) Do
     Begin
      separardigitos(numero,digito);
-     oculorrencia(digito,numero,a);
+     ocurrencia(digito,numero,a);
 
 
     End;
@@ -78,7 +78,7 @@ Begin
 
 
   End;
- degetomsleido(a,x,p);
- degetosemocuremsa(a);
+ digitomsleido(a,x,p);
+ digitosemocuremsa(a);
  WriteLn(p);
 End.
