@@ -7,17 +7,27 @@ Type
  numeros = array[rango] Of integer;
 
 Procedure separardigitos(Var numero,digito:integer);
+
+
+
 Begin
- digito := numero Mod 10;
- numero := numero Div 10;
+ While Not(numero=0) Do
+  Begin
+
+   digito := numero Mod 10;
+   numero := numero Div 10;
+
+   ocurrencia(digito,numero,a);
+
+  End;
 
 End;
 Procedure ocurrencia(digito,numero:integer;Var a:numeros);
 Begin
- If Not(numero=0)Then
-  a[digito] := a[digito]+1;
+ a[digito] := a[digito]+1;
 
 End;
+
 Procedure inicializararray(Var a:numeros);
 
 Var i:integer;
@@ -67,18 +77,14 @@ Begin
  ReadLn(numero);
  While Not(numero=-1) Do
   Begin
-   While Not(numero=0) Do
-    Begin
-     separardigitos(numero,digito);
-     ocurrencia(digito,numero,a);
 
+   separardigitos(numero,digito);
 
-    End;
    ReadLn(numero);
 
 
   End;
  digitomsleido(a,x,p);
  digitosemocuremsa(a);
- WriteLn(p);
+ WriteLn(a[0]);
 End.

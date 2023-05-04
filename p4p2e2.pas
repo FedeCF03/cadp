@@ -8,7 +8,7 @@ Type
 
 
 
-Procedure leeralumnos(Var v:alumnos);
+Procedure leeralumnos(Var v:alumnos;Var i:integer);
 
 Var i:integer;
  n:string;
@@ -49,6 +49,13 @@ End;
 Procedure poneren4{alla la estan poniendo en 4}(n:String;Var v:nombres);
 Begin
  v[4] := n;
+End;
+
+Procedure leernombre(Var v:alumnos; Var i :integer;)
+Begin
+ ReadLn(v[i]);
+ i := i+1;
+
 End;
 
 
