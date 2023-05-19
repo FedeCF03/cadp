@@ -8,8 +8,8 @@ Type
  sondas = Record
   name:srt;
   duracion:integer;
-  costoc:real;
-  costom:real;
+  costoc:real; // costo construcción 
+  costom:real; //costo mensual 
   rango:cats;
  End;
 
@@ -75,7 +75,7 @@ Begin
   End;
 End;
 
-Procedure mascara(Var nsmascara:srt; Var costoc,costom:real;dato:sondas);
+Procedure mascara(Var nsmascara:srt; Var costoc,costom:real;dato:sondas);  // construcción más cara
 
 
 Begin
@@ -124,7 +124,7 @@ Begin
 
 End;
 
-Procedure recorrerLista(l:lista);
+Procedure recorrerLista(l:lista;var promedioc: real;promedios:integer;);
 
 Var 
  secun:lista;
