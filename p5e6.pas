@@ -42,7 +42,7 @@ End;
 
 
 
-Procedure stringLista(Var l:listS;name:str);
+Procedure agregarLists(Var l:listS;name:str);
 
 Var nuevo:listS;
 Begin
