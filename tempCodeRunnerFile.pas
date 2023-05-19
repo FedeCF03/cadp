@@ -1,2 +1,1 @@
-
-Var v:arrayalumnos;
+v
