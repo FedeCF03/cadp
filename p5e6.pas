@@ -106,6 +106,19 @@ Begin
  v[rango] := v[rango]+1;
 End;
 
+Function destimadas(cantsondas,promediod:integer;dato:sondas);
+
+Begin
+
+ If (promediod<dato.duracion) Then
+
+  destimadas := cantsondas+1
+
+ Else destimadas := cantsondas;
+
+
+End;
+
 Procedure puntocyd(l:lista;promediod:integer;promedioc:real);
 
 Var cantsondas:integer;
@@ -117,7 +130,7 @@ Begin
  While Not(secun^.sig=Nil) Do
   Begin
    secun := l;
-   cantsondas := destimadas(cantsondas,secun^.dato);
+   cantsondas := destimadas(cantsondas,promediod,secun^.dato);
    secun := secun^.sig;
   End;
 
