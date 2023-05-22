@@ -1,5 +1,7 @@
 
 
+
+
 {La cátedra de CADP necesita un programa para generar el listado de alumnos ingresantes que rendirán el parcial. 
 Para ello, la cátedra DISPONE de un listado con todos alumnos que ingresaron este año a la facultad. 
 De cada alumno se conoce su DNI, nombre y apellido, nota obtenida en curso de ingreso (entre 4 y 10), 
@@ -23,7 +25,7 @@ Type
  str = string[20];
  nota = 4..10;
  turno = 1..4;
- asistencias = 0..12;
+ asistencias = 1..12;
 
  alumno = Record
   dni:integer;
