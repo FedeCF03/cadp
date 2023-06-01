@@ -1,1 +1,1 @@
-v
+ While (act <> Nil) And ((act^.dato.codigo <v.codigo) Or (act^.dato.dia <= v.dia)) Do
